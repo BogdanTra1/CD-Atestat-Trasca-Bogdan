@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <title>Verificare permis</title>
+</head>
+<body>
+    <h1>Verificare permis</h1>
+
+    <script>
+        let varsta = prompt("Câți ani ai?");
+        varsta = Number(varsta); // Convertim în număr
+
+        if (varsta >= 18) {
+            alert("Poți obține permisul de conducere! 🚗");
+        } else if (varsta >= 16) {
+            alert("Poți începe orele de condus! 🏁");
+        } else {
+            alert("Ești prea mic pentru permis! ❌");
+        }else if(varsta <0){
+            alert("introdu o varsta valida!")
+        }
+
+    </script>
+</body>
+</html>
