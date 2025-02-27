@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+<body>
+    <button color="red" height="100px" width="100px" onclick="afis(10,5)" >rares</button>
+    <p id="text">Text inițial</p>
+    <button onclick="schimbaText()">Schimbă textul</button>
+    <img id="imagine" src="imagine1.jpg" width="200">
+    <button onclick="schimbaImagine()">Schimbă imaginea</button>
+    <p id="stil">Schimbă-mi culoarea!</p>
+    <button onclick="schimbaCuloare()">Click</button>
+    
+ <script>
+function suma(a,b){
+    return a+b;
+}
+function produs(a,b){
+    return a*b;
+}
+
+
+
+
+  function schimbaText() {
+    document.getElementById("text").innerText = "Text modificat!";
+  }
+
+
+
+function afis(a,b) {
+    console.log("suma :",suma(a,b))
+    console.log("produs :",produs(a,b))
+    }
+    afis(10,5);
+
+    function schimbaImagine() {
+    document.getElementById("").src = "";
+  }
+
+  function schimbaCuloare() {
+    document.getElementById("stil").style.color = "blue";
+  }
+</script>
+
+
+
+
+</body>
+</html>
