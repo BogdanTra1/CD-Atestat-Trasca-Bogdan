@@ -1,0 +1,124 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" href="./trasca bbq logo(1).jpg" type="image/png" sizes="16x16">
+    <style>
+        *{
+            margin: 0;
+        }
+        body {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            background: white;
+            text-align: center;
+        }
+        .container {
+            max-width: 400px;
+            margin: 50px auto;
+            background: white;
+            padding: 45px;
+            border-radius: 5px;
+           border: double;
+        }
+        input, textarea, button {
+            width: 100%;
+            margin: 15px 0;
+            padding: 10px;
+            border: 1px solid grey;
+            border-radius: 5px;
+        }
+        nav{
+    background-color:maroon;
+color: aliceblue;
+display: flex;
+height: 50px;
+
+align-items: center;
+
+border: 3px dotted rgb(231, 227, 227);
+opacity: 95%;
+gap: 700px;
+
+
+}
+nav img{    
+margin-left: 20px;
+}
+a{
+    color:rgb(253, 252, 252);
+    
+}
+a:visited{
+    color:rgb(248, 247, 247);
+}
+
+a:hover{
+    color: rgb(248, 4, 4);
+    background-color: transparent;
+    text-decoration:none;
+    transition: 0.4s;
+}
+
+.linkuri a{
+    margin-right: 15px;
+   
+}
+footer{
+    background-color:maroon ;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    position: absolute;
+    width: 100%;
+    margin-top: 100px;
+}
+    </style>
+</head>
+<body>
+    <nav>
+
+        <img src="./bbbbbbbbbbbbbbbbbbbbbbbg.jpg"  width="60px" height="50px" >
+        <div class="linkuri">
+            <a href="./atestat.html">  <b> HOME</b></a>
+            <a href="produse"><b>PRODUSE</b>   </a>
+            <a href="./harta.html"> <b>LOCATIE</b>     </a>
+            <a href="./CONTACTUS.html">  <b>CONTACT US</b></a>
+            <a href="./informatii.html"><b>INFO</b></a>
+        </div>
+            
+            
+         </nav>
+    <div class="container">
+        <h2>Contact Us</h2>
+        <form name="submit-to-google-sheet">
+            <input name="nume" type="nume" placeholder="Nume" required>
+            <input name="email" type="email" placeholder="Email" required >
+            <input name="mesaj" type="mesaj" placeholder="Mesaj" required >
+            <button type="submit">Send</button>
+          
+          </form>
+    
+          <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbyIGqMGpYGOlio2-IvkRBMBp8aT7oeWEZ0gH272KrcqK3H0eAxxcwxSy0QF-bOSGWTo/exec'
+            const form = document.forms['submit-to-google-sheet']
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => console.log('Success!', response))
+                .catch(error => console.error('Error!', error.message))
+            })
+            
+          </script>
+    </div>
+    <a href="https://www.facebook.com/profile.php?id=61573924584844"><img src="./facebook.jpg" width="50px" height="50px"></a>
+   
+        
+        <footer>&copy;2025 TRAINIC BBQ</footer>
+        
+</body>
+</html>
