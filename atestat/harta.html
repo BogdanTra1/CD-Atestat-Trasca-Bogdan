@@ -4,21 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MAP</title>
-    <link rel="icon" href="./trasca bbq logo(1).jpg" type="image/png" sizes="16x16">
+    <link rel="icon" href="./DALL·E 2025-03-21 16.11.28 - A Western-style BBQ logo with the name 'Trasca BBQ'. The design features bold, rustic typography with an Old West aesthetic. It includes wood textures.webp" type="image/png" sizes="16x16">
+   
     <style>
         *{
             margin: 0;
         }
+        
+    
       body{
         background-color: whitesmoke;
         overflow-x: hidden;
         background-image: url(./tzatiki.jpg);
         background-size: cover;
       }
-.harta{
-text-align: center;
-margin-top: 100px;
-}
+
 nav{
     background-color:maroon;
 color: aliceblue;
@@ -27,7 +27,7 @@ width:100%;
 align-items: center;
 opacity: 98.5%;
 gap: 700px;
-
+border:5px solid maroon;
 
 }
 nav img{    
@@ -52,6 +52,24 @@ a:hover{
     margin-right: 15px;
    
 }
+.map-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        max-width: 1100px;
+        height: 600px;
+        margin: 30px auto;
+        border: 5px solid maroon;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+    .map-container iframe {
+        width: 100%;
+        height: 100%;
+        border: 0;
+    }
+
 footer{
     background-color:maroon ;
     color: white;
@@ -67,11 +85,11 @@ footer{
   
 
    <nav>
-
+    
     <img src="./bbbbbbbbbbbbbbbbbbbbbbbg.jpg"  width="60px" height="50px" >
     <div class="linkuri">
         <a href="./atestat.html"><b> HOME</b></a>
-        <a href="produse"><b>PRODUSE</b>   </a>
+        <a href="./produse.html"><b>PRODUSE</b>   </a>
         <a href="./harta.html"> <b>LOCATIE</b>     </a>
         <a href="./CONTACTUS.html">  <b>CONTACT US</b></a>
         <a href="./informatii.html"><b>INFO</b></a>
@@ -79,9 +97,15 @@ footer{
         
         
      </nav>
-
-     <div class="harta"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d89104.13773020594!2d21.134188568453617!3d45.74103493309888!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47455d786266a433%3A0x9304b60cc92f55b5!2zQmFiZWwgyJhjb2FsxIMgyJlpIExpY2V1!5e0!3m2!1sen!2sro!4v1741359752058!5m2!1sen!2sro" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-     </div> 
+     <div class="map-container">
+     <iframe src="https://umap.openstreetmap.fr/en/map/untitled-map_1194873"
+     width="100%" 
+     height="100%" 
+     style="border:0;" 
+     allowfullscreen="" 
+     loading="lazy">
+ </iframe>
+</div>
 
      <footer>&copy;2025 TRAINIC BBQ</footer>
 </body>
